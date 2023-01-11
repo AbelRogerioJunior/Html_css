@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formnulario</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="" method="post">
+        <p>
+            <label for="iest">Estado: </label>
+            <select name="estado" id="isest">
+                <optgroup label="Regiao Sul">
+                    <option value="" selected>--- Escolha ---</option>
+                    <option value="Mp">Maputo</option>
+                    <option value="Gz">Gaza</option>
+                    <option value="IH">Inhambane</option>
+                </optgroup>
+
+                <optgroup label="Regiao centro">
+                    <option value="Sf">Sofala</option>
+                    <option value="Mc">Manica</option>
+                    <option value="Br">Beira</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissao: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option >Administrador</option>
+                <option >Contabilista</option>
+                <option >Desenvolvedor</option>
+                <option >Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua Mensagem Vai Aparecer aqui"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
